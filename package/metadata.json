@@ -1,0 +1,22 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "berkkucukk",
+                "Email": "berkkucukk@proton.me"
+            }
+        ],
+        "Category": "Online Services",
+        "Description": "Live cryptocurrency prices, changes and 7-day charts from CoinGecko",
+        "Description[tr]": "CoinGecko'dan canlı kripto para fiyatları, değişimler ve 7 günlük grafikler",
+        "Icon": "coin-tracker",
+        "Id": "com.github.berkkucukk.cointracker",
+        "License": "GPL-3.0-or-later",
+        "Name": "Coin Tracker",
+        "Name[tr]": "Kripto Takip",
+        "Version": "1.0.0",
+        "Website": ""
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}

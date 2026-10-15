@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0 http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
+  <kcfgfile name=""/>
+  <group name="General">
+    <entry name="theme" type="Int">
+      <default>0</default>
+    </entry>
+    <entry name="coins" type="String">
+      <default>bitcoin,ethereum,solana</default>
+    </entry>
+    <entry name="currency" type="String">
+      <default>usd</default>
+    </entry>
+    <entry name="refreshSeconds" type="Int">
+      <default>120</default>
+      <min>60</min>
+      <max>3600</max>
+    </entry>
+    <entry name="changeWindow" type="Int">
+      <default>1</default>
+    </entry>
+    <entry name="panelMaxCoins" type="Int">
+      <default>3</default>
+      <min>1</min>
+      <max>10</max>
+    </entry>
+    <entry name="panelLayout" type="Int">
+      <default>0</default>
+    </entry>
+    <entry name="showIcon" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="showSymbol" type="Bool">
+      <default>false</default>
+    </entry>
+    <entry name="showChange" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="showSparkline" type="Bool">
+      <default>false</default>
+    </entry>
+    <entry name="compactPrices" type="Bool">
+      <default>true</default>
+    </entry>
+  </group>
+</kcfg>
