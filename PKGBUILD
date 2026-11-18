@@ -5,7 +5,7 @@
 pkgname=plasma6-applets-coin-tracker
 _appletid=com.github.berkkucukk.cointracker
 pkgver=1.0.0
-pkgrel=1
+pkgrel=2
 pkgdesc="KDE Plasma 6 widget showing live cryptocurrency prices and 7-day charts from CoinGecko"
 arch=('any')
 license=('GPL-3.0-or-later')

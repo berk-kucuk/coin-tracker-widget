@@ -203,7 +203,10 @@ def fetch_markets(ids, currency):
 
 def cached_image(coin_id, url):
     """Download the coin's small logo once; returns a file:// URL or ""."""
-    if not url:
+    # The URL comes from CoinGecko's answer. Only https: urlopen also opens
+    # file:// and ftp://, so a forged answer could otherwise have a local file
+    # copied into the cache and shown (audit W4).
+    if not url or urllib.parse.urlsplit(url).scheme != "https":
         return ""
     path = os.path.join(IMG_DIR, coin_id.replace("/", "_") + ".png")
     if not os.path.exists(path):

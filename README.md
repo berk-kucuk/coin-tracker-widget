@@ -54,7 +54,12 @@ open/close of the popup don't add requests. When CoinGecko rate-limits (HTTP
 reading. Readings older than 15 minutes are dimmed and the popup says why.
 
 Coin logos for the Modern theme are downloaded once into the same cache
-directory.
+directory (https only).
+
+**Privacy:** these requests go to CoinGecko directly, from your own IP address,
+not through Tor. CoinGecko — and anyone watching the connection's metadata —
+can see which coins you follow and how often the widget refreshes. Nothing
+about your holdings is sent: the widget only asks for prices.
 
 ## Development
 
